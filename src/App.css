@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+.app-routes {
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: grid;
+    grid-template-columns: [wall-start] minmax(22px, 144px) [first-col-start] 1fr [first-col-end] minmax(22px, 144px)[wall-end];
+    grid-template-rows: [header-start] 75px [header-end nav-start] 80px [nav-end body-start] 1fr [body-end]; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navbar-container {
+    grid-row: nav-start/nav-end;
+    grid-column: wall-start/wall-end;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar__links{
+    padding: 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-container .navbar__links .navlink-wrapper {
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+.home-page {
+    grid-column: first-col-start/first-col-end;
+    grid-row: body-start/body-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+    background-image: url('./images/header.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+
+.description {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 44px;
+}
+
+.pitch-container {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 33px;
+    text-align: center;
+    width: 400px;
+    
+}
+
+.pitch-container .first-pitch {
+    font-size: 1em;
+}
+
+.display {
+    grid-column: first-col-start/first-col-end;
+    height: 80vh;
+}
+
+
+.display-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.display-wrapper .display-image {
+    background-image: url('./images/handleboard.jpeg');
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    left: 17px;
+    top: 122px;
+}
+
+.display-wrapper .display-image-wrap {
+    background-color: #FBFFA8;
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    right: -12px;
+    z-index: -1;
+}
+
+.display-wrapper .display-image-wrap .display-image-two {
+    /* height: %; */
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.display-wrapper .display-image-wrap .display-image-two img{
+    object-fit: cover;
+    width: 360px;
+    height: 355px;
+}
+
+.product-info{
+    margin-top:0;
+    /* height: 100%; */
+
+}
+
+.product-info .product-info-stats {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 55px;
+}
+
+.product-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 44px;
+}
+
+.product-pop {
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up {
+    grid-row: body-start/body-end;
+    grid-column: first-col-start/first-col-end;
 }

@@ -1,0 +1,29 @@
+{
+    "product": [
+        {
+            "boards_id": "1",
+            "board_title": "Gutta",
+            "board_image": "images/bottles-table.jpeg"
+        },
+        {
+            "boards_id": "2",
+            "board_title": "Blue Cheese",
+            "board_image": "images/dark-background.jpeg"
+        },
+        {
+            "boards_id": "3",
+            "board_title": "Gutta",
+            "board_image": "images/grapes-oldschool.jpeg"
+        },
+        {
+            "boards_id": "4",
+            "board_title": "Gutta",
+            "board_image": "images/vegan-one-berry.jpeg"
+        },
+        {
+            "boards_id": "5",
+            "board_title": "Gutta",
+            "board_image": "images/wine-small-table.jpeg"
+        }
+    ]
+}
